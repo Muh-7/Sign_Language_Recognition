@@ -168,7 +168,3 @@ Muhammad Alsehoum
 Computer Engineering Student
 AI & Machine Learning Enthusiast
 Python Developer
-<<<<<<< HEAD
-
-=======
->>>>>>> 3b4c77591b3c87ad6a846c86559e5ef5d0acf72c
