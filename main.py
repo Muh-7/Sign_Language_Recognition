@@ -6,7 +6,7 @@ import tensorflow as tf
 # Load trained model-
 model = tf.keras.models.load_model("model/sign_language_model.h5")
 
-# labels
+
 classes = {
 0:"zero",
 1:"one",
@@ -21,14 +21,14 @@ classes = {
 10:"ten"
 }
 
-# ROI coordinates
+# ROI 
 TOP = 50
 RIGHT = 350
 BOTTOM = 300
 LEFT = 600
 
 
-# Start cam
+
 cap = cv2.VideoCapture(0)
 
 print("Camera started...")
@@ -41,7 +41,7 @@ while True:
 
     frame = cv2.flip(frame,1)
 
-    # draw ROI rectangle
+    
     cv2.rectangle(frame,(RIGHT,TOP),(LEFT,BOTTOM),(0,255,0),2)
 
     roi = frame[TOP:BOTTOM, RIGHT:LEFT]
@@ -56,7 +56,7 @@ while True:
     class_id = np.argmax(preds)
     label = classes[class_id]
 
-    # show prediction
+    
     cv2.putText(frame,
                 "Prediction: "+label,
                 (10,40),
