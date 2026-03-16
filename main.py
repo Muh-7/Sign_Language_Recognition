@@ -3,7 +3,7 @@ import numpy as np
 import tensorflow as tf
 
 
-# Load trained model-
+
 model = tf.keras.models.load_model("model/sign_language_model.h5")
 
 
