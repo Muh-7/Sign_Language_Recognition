@@ -6,7 +6,7 @@ import tensorflow as tf
 
 model = tf.keras.models.load_model("model/sign_language_model.h5")
 
-
+#labels
 classes = {
 0:"zero",
 1:"one",
