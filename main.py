@@ -21,7 +21,7 @@ classes = {
 10:"ten"
 }
 
-# ROI 
+# ROI Region of interest
 TOP = 50
 RIGHT = 350
 BOTTOM = 300
